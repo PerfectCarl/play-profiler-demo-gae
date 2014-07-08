@@ -1,0 +1,21 @@
+# Application dependencies
+
+require:
+    - play
+#    - local-modules -> profiler 
+    - carl -> profiler 0.5.4
+    - play -> gae 1.6.0
+    - play -> siena 2.0.7
+
+repositories:        
+    - playCustomModules:
+        type: local
+        artifact: "C:/Users/cran/Dropbox/docs/projects/github/play/profiler"
+        contains:
+            - local-modules -> *    
+
+    - githubModules:
+        type: http
+        artifact: "https://github.com/PerfectCarl/play-[module]/raw/master/dist/[module]-[revision].zip"
+        contains:
+            - carl -> *
