@@ -2,15 +2,15 @@
 
 require:
     - play
-#    - local-modules -> profiler 
-    - carl -> profiler 0.5.4
+    - local-modules -> profiler 
+#    - carl -> profiler 0.6
     - play -> gae 1.6.0
     - play -> siena 2.0.7
 
 repositories:        
     - playCustomModules:
         type: local
-        artifact: "C:/Users/cran/Dropbox/docs/projects/github/play/profiler"
+        artifact: "C:/Users/cran/Dropbox/docs/projects/github/play/play-profiler"
         contains:
             - local-modules -> *    
 
